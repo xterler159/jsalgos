@@ -1,4 +1,4 @@
-import { LinkedList } from './linkedlists.js'
+import { LinkedList } from './algos/linkedlists.js'
 
 const list = new LinkedList()
 list.insert('hello')
