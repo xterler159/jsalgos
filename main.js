@@ -1,5 +1,5 @@
 import { LinkedList } from './algos/linkedlists.js'
-import { Queue } from './algos/stacksAndQueues.js'
+import { Queue, Stack } from './algos/stacksAndQueues.js'
 
 console.log('================LINKDED LISTS================')
 const list = new LinkedList()
@@ -10,7 +10,7 @@ list.insert(1239438)
 list.display()
 console.log('\n')
 
-console.log('================QUEUES AND STACKS================')
+console.log('================QUEUES================')
 const queue = new Queue()
 
 queue.enqueue('hello')
@@ -33,3 +33,19 @@ queue.dequeue()
 queue.dequeue()
 
 queue.display('after dequeueing 2nd time:')
+console.log('\n')
+
+console.log('================STACKS================')
+const stack = new Stack()
+
+stack.push('hello world')
+stack.push('test')
+stack.push(12.67876)
+
+stack.pop()
+stack.display()
+
+stack.push('javascript')
+stack.display()
+stack.pop()
+stack.display()
