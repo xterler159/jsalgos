@@ -1,4 +1,5 @@
 export class Queue {
+  // LIFO: Last In, First Out
   constructor() {
     this.items = []
   }
