@@ -15,3 +15,8 @@ export const isNumberPalindrome = (n) => {
 
   return original === reversed
 }
+
+export const isStringPalindrom = (strValue) => {
+  const reversed = strValue.split('').reverse().join('')
+  return reversed === strValue
+}
