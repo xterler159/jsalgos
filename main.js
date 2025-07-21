@@ -1,51 +1,62 @@
-import { LinkedList } from './algos/linkedlists.js'
-import { Queue, Stack } from './algos/stacksAndQueues.js'
+import { LinkedList } from './algos/datastructures/linkedlists.js'
+import { Queue, Stack } from './algos/datastructures/stacksAndQueues.js'
 
-console.log('================LINKDED LISTS================')
-const list = new LinkedList()
-list.insert('hello')
-list.insert('test')
-list.insert(1239438)
+import { isNumberPalindrome } from './algos/alogrithms.js'
 
-list.display()
-console.log('\n')
+// console.log('================LINKDED LISTS================')
+// const list = new LinkedList()
+// list.insert('hello')
+// list.insert('test')
+// list.insert(1239438)
 
-console.log('================QUEUES================')
-const queue = new Queue()
+// list.display()
+// console.log('\n')
 
-queue.enqueue('hello')
-queue.enqueue('test')
-queue.display('after enqueueing:')
+// console.log('================QUEUES================')
+// const queue = new Queue()
 
-queue.dequeue()
-queue.dequeue()
-queue.display('after dequeueing:')
+// queue.enqueue('hello')
+// queue.enqueue('test')
+// queue.display('after enqueueing:')
 
-// enqueueing 2nd time
-queue.enqueue(1345)
-queue.enqueue('hey man whats up ?')
-queue.enqueue(12.55566322)
-queue.enqueue(false)
+// queue.dequeue()
+// queue.dequeue()
+// queue.display('after dequeueing:')
 
-queue.display('after enqueueing 2nd time:')
+// // enqueueing 2nd time
+// queue.enqueue(1345)
+// queue.enqueue('hey man whats up ?')
+// queue.enqueue(12.55566322)
+// queue.enqueue(false)
 
-queue.dequeue()
-queue.dequeue()
+// queue.display('after enqueueing 2nd time:')
 
-queue.display('after dequeueing 2nd time:')
-console.log('\n')
+// queue.dequeue()
+// queue.dequeue()
 
-console.log('================STACKS================')
-const stack = new Stack()
+// queue.display('after dequeueing 2nd time:')
+// console.log('\n')
 
-stack.push('hello world')
-stack.push('test')
-stack.push(12.67876)
+// console.log('================STACKS================')
+// const stack = new Stack()
 
-stack.pop()
-stack.display()
+// stack.push('hello world')
+// stack.push('test')
+// stack.push(12.67876)
 
-stack.push('javascript')
-stack.display()
-stack.pop()
-stack.display()
+// stack.pop()
+// stack.display()
+
+// stack.push('javascript')
+// stack.display()
+// stack.pop()
+// stack.display()
+
+isNumberPalindrome(11)
+
+console.log(isNumberPalindrome(11)) // true
+console.log(isNumberPalindrome(121)) // true
+console.log(isNumberPalindrome(99)) // true
+console.log(isNumberPalindrome(292)) // true
+console.log(isNumberPalindrome(123)) // false
+console.log(isNumberPalindrome(2302)) // false
