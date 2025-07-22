@@ -15,3 +15,34 @@ export const demoMap = () => {
   console.log(map.values())
   console.log('================MAPS================')
 }
+
+// exercises
+export const countFrequencies = (arrWords) => {
+  const map = new Map()
+
+  for (const word of arrWords) {
+    if (map.has(word)) {
+      map.set(word, map.get(word) + 1)
+    } else {
+      map.set(word, 1)
+    }
+  }
+
+  return map
+}
+
+export const countLetters = (letters) => {
+  const map = new Map()
+
+  for (const char of letters) {
+    if (char === ' ') continue
+
+    if (map.has(char)) {
+      map.set(char, map.get(char) + 1)
+    } else {
+      map.set(char, 1)
+    }
+  }
+
+  return map
+}
