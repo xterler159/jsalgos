@@ -1,5 +1,6 @@
 import { LinkedList } from './algos/datastructures/linkedlists.js'
 import { Queue, Stack } from './algos/datastructures/stacksAndQueues.js'
+import { demoMap } from './algos/datastructures/maps.js'
 
 import { binarySearch, isNumberPalindrome, isStringPalindrom } from './algos/alogrithms.js'
 
@@ -66,4 +67,5 @@ import { binarySearch, isNumberPalindrome, isStringPalindrom } from './algos/alo
 // console.log(isStringPalindrom('radar')) // true
 
 const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-console.log(binarySearch(arr, 5))
+
+demoMap()
